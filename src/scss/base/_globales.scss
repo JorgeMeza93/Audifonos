@@ -1,0 +1,49 @@
+@use "variables";
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: variables.$fuentePrimaria;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    font-weight: 900;
+    font-family: variables.$fuenteSecundaria;
+    margin: 2.5rem 0;
+}
+h1{
+    font-size: 4.4rem
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.degradado-principal{
+    color: transparent;
+    background: linear-gradient(90deg, rgba(218,7,31,1) 0%, rgba(66,0,242,1) 50%, rgba(218,7,31,1) 100%);
+    background-clip: text;
+}
+
+
+
+
+
+
+

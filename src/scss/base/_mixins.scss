@@ -1,0 +1,22 @@
+@use "variables";
+
+@mixin telefono {
+    @media(min-width: 480px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media(min-width: 768px){
+        @content;
+    }
+}
+@mixin desktop{
+    @media(min-width: 1024px){
+        @content;
+    }
+}
+@mixin degradado {
+    color: transparent;
+    background: linear-gradient(90deg, rgba(218,7,31,1) 0%, rgba(66,0,242,1) 50%, rgba(218,7,31,1) 100%);
+    background-clip: text;
+}

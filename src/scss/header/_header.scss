@@ -1,0 +1,50 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+.header{
+    background-color: variables.$negro;
+    padding: 15rem 0;
+    color: variables.$blanco;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+.contenido-header{
+    @media(min-width: 768px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.texto-header{
+    text-align: center;
+    padding: 5rem;
+    @media(min-width: 768px){
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+        
+    }
+}
+.tagline-producto{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+.nombre-producto{
+    font-size: 6.5rem;
+    font-weight: 700;
+    margin: 0;
+    @include mixins.tablet{
+        font-size: 10rem;
+        line-height: 1;
+    }
+}
+.precio-producto span{
+    font-size: 6rem;
+    font-weight: 700;
+}
