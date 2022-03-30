@@ -438,7 +438,7 @@ img {
 
 .degradado-principal {
   color: transparent;
-  background: linear-gradient(90deg, #da071f 0%, #4200f2 50%, #da071f 100%);
+  background: linear-gradient(90deg, rgb(218, 7, 31) 0%, rgb(66, 0, 242) 50%, rgb(218, 7, 31) 100%);
   background-clip: text;
 }
 
@@ -474,7 +474,7 @@ img {
 
 .icono > h3:hover {
   color: transparent;
-  background: linear-gradient(90deg, #da071f 0%, #4200f2 50%, #da071f 100%);
+  background: linear-gradient(90deg, rgb(218, 7, 31) 0%, rgb(66, 0, 242) 50%, rgb(218, 7, 31) 100%);
   background-clip: text;
 }
 
@@ -514,7 +514,7 @@ img {
 }
 .sobre-tech-texto h2 {
   color: transparent;
-  background: linear-gradient(90deg, #da071f 0%, #4200f2 50%, #da071f 100%);
+  background: linear-gradient(90deg, rgb(218, 7, 31) 0%, rgb(66, 0, 242) 50%, rgb(218, 7, 31) 100%);
   background-clip: text;
   font-size: 5.5rem;
   padding: 0;
@@ -540,7 +540,7 @@ img {
   font-size: 6rem;
   margin-bottom: 5rem;
   color: transparent;
-  background: linear-gradient(90deg, #da071f 0%, #4200f2 50%, #da071f 100%);
+  background: linear-gradient(90deg, rgb(218, 7, 31) 0%, rgb(66, 0, 242) 50%, rgb(218, 7, 31) 100%);
   background-clip: text;
 }
 
@@ -558,7 +558,7 @@ img {
 }
 
 .modelo {
-  background-color: #4200f2;
+  background-color: rgb(66, 0, 242);
   margin-bottom: 2rem;
   padding-left: 4rem;
   color: #ffffff;
@@ -574,7 +574,7 @@ img {
   transition-duration: 0.6s;
 }
 .modelo:last-of-type {
-  background-color: #da071f;
+  background-color: rgb(218, 7, 31);
 }
 .modelo:hover {
   transform: scale(1.12);
@@ -596,7 +596,7 @@ img {
   background-image: url(../../img/modelo-x.svg);
 }
 .modelo-x:hover {
-  background-color: #da071f;
+  background-color: rgb(218, 7, 31);
 }
 @media (min-width: 768px) {
   .modelo-x {
@@ -608,7 +608,7 @@ img {
   background-image: url(../../img/modelo-y.svg);
 }
 .modelo-y:hover {
-  background-color: #da071f;
+  background-color: rgb(218, 7, 31);
 }
 @media (min-width: 768px) {
   .modelo-y {
@@ -632,7 +632,7 @@ img {
   }
 }
 .modelo-z:hover {
-  background-color: #4200f2;
+  background-color: rgb(66, 0, 242);
   background-size: 35rem;
 }
 .modelo-z .precio {
