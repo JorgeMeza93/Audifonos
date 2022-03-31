@@ -1,3 +1,63 @@
 @use "../base/mixins";
 @use "../base/variables";
 
+.newsletter{
+    background-image: linear-gradient(to bottom, transparent 50%, variables.$blanco 0%), url(../../img/newsletter.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%, 70rem;
+    @include mixins.tablet{
+        background-image: linear-gradient(to right, transparent 50%, variables.$blanco 0%), url(../../img/newsletter.jpg);
+        background-size: 100%, 110rem;
+        background-position: center, -21rem -10rem;
+    }
+    @media(min-width:2200px){
+        background-size: 100%, 200rem;
+        background-position: center, 0 -30rem;
+    }
+    &-contenido{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5rem;
+        @include mixins.tablet{
+            grid-template-rows: unset;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &-texto{
+        grid-row: 2/3;
+        @include mixins.tablet{
+            grid-row: unset;
+            grid-column: 2/3;
+        }
+        h2{
+            text-align: center;
+            @include mixins.degradado;
+            margin-bottom: 0;
+            padding-bottom: .5rem;
+        }
+        p{
+            text-align: left;
+        }
+    }
+}
+.formulario{
+    
+    input[type="email"]{
+        display: block;
+        width: 100%;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+    }
+    input[type="submit"]{
+        display: block;
+        width: 100%;
+        padding: 2rem;
+        background-color: rgba(66,0,242,1);
+        color: variables.$blanco;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 900;
+        border: none;
+    }
+}

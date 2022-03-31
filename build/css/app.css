@@ -479,14 +479,14 @@ img {
 }
 
 .sobre-tech {
-  background: linear-gradient(to bottom, transparent 50%, #009c88 50%, #1073ba 100%), url(../../img/imagen-mujer.jpg);
+  background: linear-gradient(to bottom, transparent 50%, #4200f2 50%, #da071f 100%), url(../../img/imagen-mujer.jpg);
   background-position: right;
   background-repeat: repeat, no-repeat;
   background-size: 100%, 110rem;
 }
 @media (min-width: 768px) {
   .sobre-tech {
-    background-image: linear-gradient(to left, transparent 50%, #009c88 50%, #1073ba 100%), url(../../img/imagen-mujer.jpg);
+    background-image: linear-gradient(to left, transparent 50%, #4200f2 50%, #da071f 100%), url(../../img/imagen-mujer.jpg);
     background-size: 100%, 130rem;
   }
 }
@@ -637,4 +637,98 @@ img {
 }
 .modelo-z .precio {
   font-size: 4rem;
+}
+
+.newsletter {
+  background-image: linear-gradient(to bottom, transparent 50%, #ffffff 0%), url(../../img/newsletter.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%, 70rem;
+}
+@media (min-width: 768px) {
+  .newsletter {
+    background-image: linear-gradient(to right, transparent 50%, #ffffff 0%), url(../../img/newsletter.jpg);
+    background-size: 100%, 110rem;
+    background-position: center, -21rem -10rem;
+  }
+}
+@media (min-width: 2200px) {
+  .newsletter {
+    background-size: 100%, 200rem;
+    background-position: center, 0 -30rem;
+  }
+}
+.newsletter-contenido {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+}
+@media (min-width: 768px) {
+  .newsletter-contenido {
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.newsletter-texto {
+  grid-row: 2/3;
+}
+@media (min-width: 768px) {
+  .newsletter-texto {
+    grid-row: unset;
+    grid-column: 2/3;
+  }
+}
+.newsletter-texto h2 {
+  text-align: center;
+  color: transparent;
+  background: linear-gradient(90deg, #da071f 0%, #4200f2 50%, #da071f 100%);
+  background-clip: text;
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+}
+.newsletter-texto p {
+  text-align: left;
+}
+
+.formulario input[type=email] {
+  display: block;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+.formulario input[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  background-color: #4200f2;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+  border: none;
+}
+
+.footer {
+  background-image: linear-gradient(to right, #da071f 0%, #4200f2 50%, #da071f 100%);
+  margin: 5rem 0 0 0;
+}
+.footer p {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+.footer p:first-of-type {
+  padding: 3rem;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.copyright {
+  padding-top: 2rem;
+  text-align: left;
+}
+.copyright::before {
+  content: "Designed by Jorge Meza Bello 30/03/2022";
+  color: #000;
+  font-size: 1.8rem;
 }

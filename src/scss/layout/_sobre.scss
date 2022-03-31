@@ -2,12 +2,12 @@
 @use "../base/variables";
 
 .sobre-tech{
-    background: linear-gradient(to bottom, transparent 50%, #009c88 50%, #1073ba 100%), url(../../img/imagen-mujer.jpg);
+    background: linear-gradient(to bottom, transparent 50%, rgba(66,0,242,1) 50%, rgba(218,7,31,1) 100%), url(../../img/imagen-mujer.jpg);
     background-position: right;
     background-repeat: repeat, no-repeat;
     background-size: 100%, 110rem;
     @media(min-width:768px){
-        background-image: linear-gradient(to left, transparent 50%, #009c88 50%, #1073ba 100%), url(../../img/imagen-mujer.jpg);
+        background-image: linear-gradient(to left, transparent 50%, rgba(66,0,242,1) 50%, rgba(218,7,31,1) 100%), url(../../img/imagen-mujer.jpg);
         background-size: 100%, 130rem;
     }
     &-grid{
@@ -43,8 +43,6 @@
             font-size: 2rem;
             line-height: 2;
         }
-
-
     }
 
 }
